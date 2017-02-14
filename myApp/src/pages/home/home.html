@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      Look straight to the camera and look good!
+      <br>
+      <button ion-button (click)="takePicture()">Take a Picture</button>
+      <br>
+      <br>
+      Latest Picture:
+      <img [src]="base64Image" *ngIf="base64Image" />
+     </ion-card-content>
+  </ion-card>  
+</ion-content>
